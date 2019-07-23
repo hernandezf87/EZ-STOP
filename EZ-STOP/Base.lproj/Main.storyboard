@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EZ_STOP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XfC-hm-bAz">
+                                <rect key="frame" x="0.0" y="115.5" width="375" height="436"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="436" id="fID-7l-B0F"/>
+                                    <constraint firstAttribute="width" constant="375" id="uat-uk-Ktx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjZ-0d-fhb">
+                                <rect key="frame" x="124.5" y="275" width="126" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="YzY-7r-iPF"/>
+                                    <constraint firstAttribute="width" constant="126" id="tFL-Pc-zwY"/>
+                                </constraints>
+                                <state key="normal" image="exclamation point icon"/>
+                                <connections>
+                                    <action selector="warningButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Esu-Yv-WwQ"/>
+                                    <segue destination="2rA-wP-rui" kind="show" identifier="toSecondViewController" id="9GL-98-TMQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmk-b2-562">
+                                <rect key="frame" x="124.5" y="137" width="126" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="138" id="AmX-Y4-J3N"/>
+                                    <constraint firstAttribute="width" constant="126" id="p3o-2K-KTl"/>
+                                </constraints>
+                                <state key="normal" image="stop_icon "/>
+                                <connections>
+                                    <action selector="stopButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="EXb-AQ-8HF"/>
+                                    <segue destination="0NS-a0-enW" kind="show" identifier="toFirstVieController" id="WPI-oI-I9H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miO-bj-0mq">
+                                <rect key="frame" x="124.5" y="400" width="126" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="C8w-4p-g17"/>
+                                    <constraint firstAttribute="height" constant="117" id="Ilt-OR-1Gz"/>
+                                </constraints>
+                                <state key="normal" image="thumbs-up"/>
+                                <connections>
+                                    <action selector="goodJobButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kgy-bu-J3e"/>
+                                    <segue destination="XBk-ds-vDs" kind="show" identifier="toThirdViewController" id="nsk-DU-xyJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XfC-hm-bAz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5i1-4H-mou"/>
+                            <constraint firstItem="miO-bj-0mq" firstAttribute="top" secondItem="KjZ-0d-fhb" secondAttribute="bottom" constant="8" id="6DX-Ev-il5"/>
+                            <constraint firstItem="KjZ-0d-fhb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RZz-rb-HXM"/>
+                            <constraint firstItem="miO-bj-0mq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bPF-2I-iNT"/>
+                            <constraint firstItem="KjZ-0d-fhb" firstAttribute="top" secondItem="bmk-b2-562" secondAttribute="bottom" id="e7b-Ac-xbe"/>
+                            <constraint firstItem="KjZ-0d-fhb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nt8-6u-uVA"/>
+                            <constraint firstItem="bmk-b2-562" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rIU-Ks-2Wt"/>
+                            <constraint firstItem="XfC-hm-bAz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ruC-pS-1yd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="JOY-x7-ItT">
+            <objects>
+                <viewController id="2rA-wP-rui" customClass="SecondViewController" customModule="EZ_STOP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="deb-tB-IaE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6F-xh-7hL">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.99442261460000003" green="0.96901518109999996" blue="0.260961473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="EZ-STOP" id="R1b-Qp-thO">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="reply" id="Hpt-XF-AaP">
+                                            <connections>
+                                                <action selector="homeButtonPressed" destination="2rA-wP-rui" id="j6V-mE-lN0"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="backToHomeView" id="NFH-Mg-Pi0"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem image="caution-3" style="plain" id="h0g-BZ-hRH">
+                                                <color key="tintColor" red="0.2811053395" green="0.60990655419999995" blue="0.42551732060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="buttonGreenPressed" destination="2rA-wP-rui" id="Xmc-yT-ReA"/>
+                                                    <segue destination="XBk-ds-vDs" kind="show" identifier="backToGreenView" id="3FS-kT-8dT"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem image="caution-3" style="plain" id="LIL-Rd-XFo">
+                                                <color key="tintColor" red="0.82462298869999995" green="0.20709139109999999" blue="0.1012700275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="buttonRedPressed" destination="2rA-wP-rui" id="dRy-CW-qCv"/>
+                                                    <segue destination="0NS-a0-enW" kind="show" identifier="backToRedView" id="NY7-nt-5dN"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamation point icon" translatesAutoresizingMaskIntoConstraints="NO" id="wRq-na-ATW">
+                                <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WARNING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaB-tC-pR2">
+                                <rect key="frame" x="100" y="481" width="175" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="NXv-sd-fD7"/>
+                                    <constraint firstAttribute="height" constant="48" id="n9l-qn-l3N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99442261460000003" green="0.96901518109999996" blue="0.260961473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wRq-na-ATW" firstAttribute="centerY" secondItem="deb-tB-IaE" secondAttribute="centerY" id="Bof-Nd-Li4"/>
+                            <constraint firstItem="kaB-tC-pR2" firstAttribute="top" secondItem="wRq-na-ATW" secondAttribute="bottom" constant="27.5" id="H8g-9n-uNv"/>
+                            <constraint firstItem="wRq-na-ATW" firstAttribute="centerX" secondItem="deb-tB-IaE" secondAttribute="centerX" id="gJy-a4-7S2"/>
+                            <constraint firstItem="kaB-tC-pR2" firstAttribute="centerX" secondItem="deb-tB-IaE" secondAttribute="centerX" id="mnK-Hh-LIj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8CF-dB-4VA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="77O-oC-MrG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1214" y="580"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="ayV-T9-wp3">
+            <objects>
+                <viewController id="XBk-ds-vDs" customClass="ThirdViewController" customModule="EZ_STOP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PIv-d9-RYD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z10-SL-Pmk">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.2811053395" green="0.60990655419999995" blue="0.42551732060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="EZ-STOP" id="Pep-d1-WoP">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="reply" id="yKP-nO-aMe">
+                                            <connections>
+                                                <action selector="backMainButtonPressed" destination="XBk-ds-vDs" id="fPu-Hb-4NF"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="theMainViewController" id="Ywt-ZJ-6we"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem image="caution-3" style="plain" id="80r-kj-aKe">
+                                                <color key="tintColor" red="0.99442261460000003" green="0.96901518109999996" blue="0.260961473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="yellowPressed" destination="XBk-ds-vDs" id="u4B-Zi-oik"/>
+                                                    <segue destination="2rA-wP-rui" kind="show" identifier="theSecondViewController" id="uRk-Xd-zUT"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem image="caution-3" style="plain" id="ExD-H1-KV9">
+                                                <color key="tintColor" red="0.82462298869999995" green="0.20709139109999999" blue="0.1012700275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="redPressed" destination="XBk-ds-vDs" id="q3v-7S-JuR"/>
+                                                    <segue destination="0NS-a0-enW" kind="show" identifier="theRedViewController" id="w7h-kK-3XA"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumbs-up" translatesAutoresizingMaskIntoConstraints="NO" id="lai-a3-onh">
+                                <rect key="frame" x="80.5" y="228.5" width="214" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="4gu-Hw-mh4"/>
+                                    <constraint firstAttribute="height" constant="210" id="dm1-Bl-Tfq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOOD JOB!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Oc-9Z-reN">
+                                <rect key="frame" x="81.5" y="476" width="212" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="212" id="CdH-La-6zL"/>
+                                    <constraint firstAttribute="height" constant="48" id="NJZ-r0-s3G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2811053395" green="0.60990655419999995" blue="0.42551732060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lai-a3-onh" firstAttribute="centerX" secondItem="PIv-d9-RYD" secondAttribute="centerX" id="0N2-Of-sxL"/>
+                            <constraint firstItem="4Oc-9Z-reN" firstAttribute="top" secondItem="lai-a3-onh" secondAttribute="bottom" constant="37.5" id="6si-F3-bkn"/>
+                            <constraint firstItem="lai-a3-onh" firstAttribute="centerY" secondItem="PIv-d9-RYD" secondAttribute="centerY" id="h7Y-CC-v8e"/>
+                            <constraint firstItem="lai-a3-onh" firstAttribute="centerY" secondItem="PIv-d9-RYD" secondAttribute="centerY" id="hZp-Oc-Ath"/>
+                            <constraint firstItem="4Oc-9Z-reN" firstAttribute="centerX" secondItem="PIv-d9-RYD" secondAttribute="centerX" id="s5U-fJ-wgm"/>
+                            <constraint firstItem="lai-a3-onh" firstAttribute="centerX" secondItem="PIv-d9-RYD" secondAttribute="centerX" id="uMw-dI-2xa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FRB-El-rAp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kwx-5S-rxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2311" y="161"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="8Uh-zy-WN8">
+            <objects>
+                <viewController id="0NS-a0-enW" customClass="FirstViewController" customModule="EZ_STOP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vrf-r2-wgP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1q-4d-WIf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.82462298869999995" green="0.20709139109999999" blue="0.1012700275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="EZ-STOP" id="zIx-Bz-2o4">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="reply" id="geK-KY-i84">
+                                            <connections>
+                                                <action selector="backButtonPressed" destination="0NS-a0-enW" id="JEq-ea-sjr"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="toMainViewController" id="0ZU-mG-5AI"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem image="caution-3" style="plain" id="Wql-wc-at1">
+                                                <color key="tintColor" red="0.99442261460000003" green="0.96901518109999996" blue="0.260961473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="yellowButtonPressed" destination="0NS-a0-enW" id="opt-Uu-Btc"/>
+                                                    <segue destination="2rA-wP-rui" kind="show" identifier="toYellowViewController" id="QCN-pa-uyy"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem image="caution-3" style="plain" id="2Ad-xd-YsM">
+                                                <color key="tintColor" red="0.2811053395" green="0.60990655419999995" blue="0.42551732060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="greenButtonPressed" destination="0NS-a0-enW" id="5RW-4g-a1s"/>
+                                                    <segue destination="XBk-ds-vDs" kind="show" identifier="toGreatJobViewController" id="80h-ji-OSh"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem image="caution-3" style="plain" id="cDE-ML-JBI">
+                                                <color key="tintColor" red="0.82462298869999995" green="0.20709139109999999" blue="0.1012700275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stop_icon " translatesAutoresizingMaskIntoConstraints="NO" id="yiu-ty-N6o">
+                                <rect key="frame" x="28" y="174" width="319" height="319"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82462298869999995" green="0.20709139109999999" blue="0.1012700275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yiu-ty-N6o" firstAttribute="centerX" secondItem="vrf-r2-wgP" secondAttribute="centerX" id="1Fn-dD-Aoq"/>
+                            <constraint firstItem="yiu-ty-N6o" firstAttribute="centerY" secondItem="vrf-r2-wgP" secondAttribute="centerY" id="Tnm-s5-QfQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xX5-Hq-alb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eaK-3o-1Vv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1364" y="-427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="caution-3" width="24" height="24"/>
+        <image name="exclamation point icon" width="240" height="240"/>
+        <image name="stop_icon " width="319" height="319"/>
+        <image name="thumbs-up" width="214" height="210"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="w7h-kK-3XA"/>
+        <segue reference="3FS-kT-8dT"/>
+        <segue reference="uRk-Xd-zUT"/>
+        <segue reference="Ywt-ZJ-6we"/>
+    </inferredMetricsTieBreakers>
+</document>
