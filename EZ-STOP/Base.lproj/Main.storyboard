@@ -92,7 +92,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamation point icon" translatesAutoresizingMaskIntoConstraints="NO" id="wRq-na-ATW">
                                 <rect key="frame" x="67.666666666666686" y="286" width="240" height="240"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WARNING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaB-tC-pR2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaB-tC-pR2">
                                 <rect key="frame" x="100" y="553.66666666666663" width="175" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175" id="NXv-sd-fD7"/>
@@ -111,21 +111,21 @@
                                 <color key="barTintColor" red="0.99442261460000003" green="0.96901518109999996" blue="0.260961473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="EZ-STOP" id="R1b-Qp-thO">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="reply" id="Hpt-XF-AaP">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="Hpt-XF-AaP">
                                             <connections>
                                                 <action selector="homeButtonPressed" destination="2rA-wP-rui" id="j6V-mE-lN0"/>
                                                 <segue destination="BYZ-38-t0r" kind="show" identifier="backToHomeView" id="NFH-Mg-Pi0"/>
                                             </connections>
                                         </barButtonItem>
                                         <rightBarButtonItems>
-                                            <barButtonItem image="caution-3" style="plain" id="h0g-BZ-hRH">
+                                            <barButtonItem image="caution-3" id="h0g-BZ-hRH">
                                                 <color key="tintColor" red="0.2811053395" green="0.60990655419999995" blue="0.42551732060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="buttonGreenPressed" destination="2rA-wP-rui" id="Xmc-yT-ReA"/>
                                                     <segue destination="XBk-ds-vDs" kind="show" identifier="backToGreenView" id="3FS-kT-8dT"/>
                                                 </connections>
                                             </barButtonItem>
-                                            <barButtonItem image="caution-3" style="plain" id="LIL-Rd-XFo">
+                                            <barButtonItem image="caution-3" id="LIL-Rd-XFo">
                                                 <color key="tintColor" red="0.82462298869999995" green="0.20709139109999999" blue="0.1012700275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="buttonRedPressed" destination="2rA-wP-rui" id="dRy-CW-qCv"/>
@@ -168,7 +168,7 @@
                                     <constraint firstAttribute="height" constant="210" id="dm1-Bl-Tfq"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOOD JOB!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Oc-9Z-reN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Oc-9Z-reN">
                                 <rect key="frame" x="81.666666666666686" y="548.66666666666663" width="212" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="212" id="CdH-La-6zL"/>
@@ -187,21 +187,21 @@
                                 <color key="barTintColor" red="0.2811053395" green="0.60990655419999995" blue="0.42551732060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="EZ-STOP" id="Pep-d1-WoP">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="reply" id="yKP-nO-aMe">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="yKP-nO-aMe">
                                             <connections>
                                                 <action selector="backMainButtonPressed" destination="XBk-ds-vDs" id="fPu-Hb-4NF"/>
                                                 <segue destination="BYZ-38-t0r" kind="show" identifier="theMainViewController" id="Ywt-ZJ-6we"/>
                                             </connections>
                                         </barButtonItem>
                                         <rightBarButtonItems>
-                                            <barButtonItem image="caution-3" style="plain" id="80r-kj-aKe">
+                                            <barButtonItem image="caution-3" id="80r-kj-aKe">
                                                 <color key="tintColor" red="0.99442261460000003" green="0.96901518109999996" blue="0.260961473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="yellowPressed" destination="XBk-ds-vDs" id="u4B-Zi-oik"/>
                                                     <segue destination="2rA-wP-rui" kind="show" identifier="theSecondViewController" id="uRk-Xd-zUT"/>
                                                 </connections>
                                             </barButtonItem>
-                                            <barButtonItem image="caution-3" style="plain" id="ExD-H1-KV9">
+                                            <barButtonItem image="caution-3" id="ExD-H1-KV9">
                                                 <color key="tintColor" red="0.82462298869999995" green="0.20709139109999999" blue="0.1012700275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="redPressed" destination="XBk-ds-vDs" id="q3v-7S-JuR"/>
@@ -251,21 +251,21 @@
                                 <color key="barTintColor" red="0.82462298869999995" green="0.20709139109999999" blue="0.1012700275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="EZ-STOP" id="zIx-Bz-2o4">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="reply" id="geK-KY-i84">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="geK-KY-i84">
                                             <connections>
                                                 <action selector="backButtonPressed" destination="0NS-a0-enW" id="JEq-ea-sjr"/>
                                                 <segue destination="BYZ-38-t0r" kind="show" identifier="toMainViewController" id="0ZU-mG-5AI"/>
                                             </connections>
                                         </barButtonItem>
                                         <rightBarButtonItems>
-                                            <barButtonItem image="caution-3" style="plain" id="Wql-wc-at1">
+                                            <barButtonItem image="caution-3" id="Wql-wc-at1">
                                                 <color key="tintColor" red="0.99442261460000003" green="0.96901518109999996" blue="0.260961473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="yellowButtonPressed" destination="0NS-a0-enW" id="opt-Uu-Btc"/>
                                                     <segue destination="2rA-wP-rui" kind="show" identifier="toYellowViewController" id="QCN-pa-uyy"/>
                                                 </connections>
                                             </barButtonItem>
-                                            <barButtonItem image="caution-3" style="plain" id="2Ad-xd-YsM">
+                                            <barButtonItem image="caution-3" id="2Ad-xd-YsM">
                                                 <color key="tintColor" red="0.2811053395" green="0.60990655419999995" blue="0.42551732060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="greenButtonPressed" destination="0NS-a0-enW" id="5RW-4g-a1s"/>
@@ -300,8 +300,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="w7h-kK-3XA"/>
-        <segue reference="80h-ji-OSh"/>
-        <segue reference="QCN-pa-uyy"/>
-        <segue reference="0ZU-mG-5AI"/>
+        <segue reference="3FS-kT-8dT"/>
+        <segue reference="uRk-Xd-zUT"/>
+        <segue reference="Ywt-ZJ-6we"/>
     </inferredMetricsTieBreakers>
 </document>
