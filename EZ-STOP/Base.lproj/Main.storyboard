@@ -35,7 +35,7 @@
                                 <state key="normal" image="exclamation point icon"/>
                                 <connections>
                                     <action selector="warningButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Esu-Yv-WwQ"/>
-                                    <segue destination="2rA-wP-rui" kind="show" identifier="toSecondViewController" id="9GL-98-TMQ"/>
+                                    <segue destination="2rA-wP-rui" kind="show" identifier="toSecondViewController" id="YnQ-Xh-0fc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmk-b2-562">
@@ -89,65 +89,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamation point icon" translatesAutoresizingMaskIntoConstraints="NO" id="wRq-na-ATW">
-                                <rect key="frame" x="67.666666666666686" y="286" width="240" height="240"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaB-tC-pR2">
-                                <rect key="frame" x="100" y="553.66666666666663" width="175" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="175" id="NXv-sd-fD7"/>
-                                    <constraint firstAttribute="height" constant="48" id="n9l-qn-l3N"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6F-xh-7hL">
                                 <rect key="frame" x="16" y="44" width="343" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="Sgm-m4-Kbo"/>
-                                    <constraint firstAttribute="height" constant="44" id="awt-5e-gad"/>
+                                    <constraint firstAttribute="width" constant="343" id="66S-2a-KJr"/>
+                                    <constraint firstAttribute="height" constant="44" id="u4n-5z-lyR"/>
                                 </constraints>
                                 <color key="barTintColor" red="0.99442261460000003" green="0.96901518109999996" blue="0.260961473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="EZ-STOP" id="R1b-Qp-thO">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="Hpt-XF-AaP">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="Hpt-XF-AaP">
                                             <connections>
                                                 <action selector="homeButtonPressed" destination="2rA-wP-rui" id="j6V-mE-lN0"/>
-                                                <segue destination="BYZ-38-t0r" kind="show" identifier="backToHomeView" id="NFH-Mg-Pi0"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="backToHomeView" id="9LL-Ah-CA8"/>
                                             </connections>
                                         </barButtonItem>
-                                        <rightBarButtonItems>
-                                            <barButtonItem image="caution-3" id="h0g-BZ-hRH">
-                                                <color key="tintColor" red="0.2811053395" green="0.60990655419999995" blue="0.42551732060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <connections>
-                                                    <action selector="buttonGreenPressed" destination="2rA-wP-rui" id="Xmc-yT-ReA"/>
-                                                    <segue destination="XBk-ds-vDs" kind="show" identifier="backToGreenView" id="3FS-kT-8dT"/>
-                                                </connections>
-                                            </barButtonItem>
-                                            <barButtonItem image="caution-3" id="LIL-Rd-XFo">
-                                                <color key="tintColor" red="0.82462298869999995" green="0.20709139109999999" blue="0.1012700275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <connections>
-                                                    <action selector="buttonRedPressed" destination="2rA-wP-rui" id="dRy-CW-qCv"/>
-                                                    <segue destination="0NS-a0-enW" kind="show" identifier="backToRedView" id="NY7-nt-5dN"/>
-                                                </connections>
-                                            </barButtonItem>
-                                        </rightBarButtonItems>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="choose word" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uuM-oL-Rxe">
+                                <rect key="frame" x="64.666666666666686" y="598" width="246" height="50"/>
+                                <color key="backgroundColor" red="0.99442261460000003" green="0.96901518109999996" blue="0.260961473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="246" id="eKj-s6-Zpj"/>
+                                    <constraint firstAttribute="height" constant="50" id="xK9-iF-TES"/>
+                                </constraints>
+                                <color key="textColor" red="0.81767332553863525" green="0.34880638122558594" blue="0.11762622743844986" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="35"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamation point icon" translatesAutoresizingMaskIntoConstraints="NO" id="wRq-na-ATW">
+                                <rect key="frame" x="67.666666666666686" y="286" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="aXl-X4-ODM"/>
+                                    <constraint firstAttribute="width" constant="240" id="z51-V0-9ox"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99442261460000003" green="0.96901518109999996" blue="0.260961473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wRq-na-ATW" firstAttribute="centerY" secondItem="deb-tB-IaE" secondAttribute="centerY" id="Bof-Nd-Li4"/>
-                            <constraint firstItem="kaB-tC-pR2" firstAttribute="top" secondItem="wRq-na-ATW" secondAttribute="bottom" constant="27.5" id="H8g-9n-uNv"/>
-                            <constraint firstItem="wRq-na-ATW" firstAttribute="centerX" secondItem="deb-tB-IaE" secondAttribute="centerX" id="gJy-a4-7S2"/>
-                            <constraint firstItem="z6F-xh-7hL" firstAttribute="centerX" secondItem="8CF-dB-4VA" secondAttribute="centerX" id="h5S-gJ-PIc"/>
-                            <constraint firstItem="kaB-tC-pR2" firstAttribute="centerX" secondItem="deb-tB-IaE" secondAttribute="centerX" id="mnK-Hh-LIj"/>
-                            <constraint firstItem="z6F-xh-7hL" firstAttribute="top" secondItem="8CF-dB-4VA" secondAttribute="top" id="zHy-oQ-Rmh"/>
+                            <constraint firstItem="z6F-xh-7hL" firstAttribute="leading" secondItem="8CF-dB-4VA" secondAttribute="leading" constant="16" id="Df4-vJ-HLI"/>
+                            <constraint firstItem="z6F-xh-7hL" firstAttribute="top" secondItem="8CF-dB-4VA" secondAttribute="top" id="HBc-QP-h0t"/>
+                            <constraint firstItem="8CF-dB-4VA" firstAttribute="trailing" secondItem="z6F-xh-7hL" secondAttribute="trailing" constant="16" id="Wmm-f9-kGe"/>
+                            <constraint firstItem="uuM-oL-Rxe" firstAttribute="leading" secondItem="8CF-dB-4VA" secondAttribute="leading" constant="64.666666666666686" id="XzP-fx-eEw"/>
+                            <constraint firstItem="wRq-na-ATW" firstAttribute="centerY" secondItem="deb-tB-IaE" secondAttribute="centerY" id="he2-xT-qCp"/>
+                            <constraint firstItem="wRq-na-ATW" firstAttribute="centerX" secondItem="deb-tB-IaE" secondAttribute="centerX" id="lja-m3-cpk"/>
+                            <constraint firstItem="8CF-dB-4VA" firstAttribute="trailing" secondItem="uuM-oL-Rxe" secondAttribute="trailing" constant="64.333333333333314" id="uEm-AL-3Nz"/>
+                            <constraint firstItem="8CF-dB-4VA" firstAttribute="bottom" secondItem="uuM-oL-Rxe" secondAttribute="bottom" constant="130" id="xyJ-7P-Z5y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8CF-dB-4VA"/>
                     </view>
+                    <connections>
+                        <outlet property="cautionPulseView" destination="wRq-na-ATW" id="sex-e6-jte"/>
+                        <outlet property="favoriteWordTextField" destination="uuM-oL-Rxe" id="V46-3A-zH6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="77O-oC-MrG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -161,23 +156,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumbs-up" translatesAutoresizingMaskIntoConstraints="NO" id="lai-a3-onh">
-                                <rect key="frame" x="80.666666666666686" y="301" width="214" height="210"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="214" id="4gu-Hw-mh4"/>
-                                    <constraint firstAttribute="height" constant="210" id="dm1-Bl-Tfq"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Oc-9Z-reN">
-                                <rect key="frame" x="81.666666666666686" y="548.66666666666663" width="212" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="212" id="CdH-La-6zL"/>
-                                    <constraint firstAttribute="height" constant="48" id="NJZ-r0-s3G"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z10-SL-Pmk">
                                 <rect key="frame" x="16" y="44" width="343" height="44"/>
                                 <constraints>
@@ -187,45 +165,46 @@
                                 <color key="barTintColor" red="0.2811053395" green="0.60990655419999995" blue="0.42551732060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="EZ-STOP" id="Pep-d1-WoP">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="yKP-nO-aMe">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="yKP-nO-aMe">
                                             <connections>
-                                                <action selector="backMainButtonPressed" destination="XBk-ds-vDs" id="fPu-Hb-4NF"/>
-                                                <segue destination="BYZ-38-t0r" kind="show" identifier="theMainViewController" id="Ywt-ZJ-6we"/>
+                                                <action selector="toHomeButtonExit:" destination="XBk-ds-vDs" id="c5G-mW-wNY"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="exitToHomeButton" id="iZN-Ha-Dlh"/>
                                             </connections>
                                         </barButtonItem>
-                                        <rightBarButtonItems>
-                                            <barButtonItem image="caution-3" id="80r-kj-aKe">
-                                                <color key="tintColor" red="0.99442261460000003" green="0.96901518109999996" blue="0.260961473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <connections>
-                                                    <action selector="yellowPressed" destination="XBk-ds-vDs" id="u4B-Zi-oik"/>
-                                                    <segue destination="2rA-wP-rui" kind="show" identifier="theSecondViewController" id="uRk-Xd-zUT"/>
-                                                </connections>
-                                            </barButtonItem>
-                                            <barButtonItem image="caution-3" id="ExD-H1-KV9">
-                                                <color key="tintColor" red="0.82462298869999995" green="0.20709139109999999" blue="0.1012700275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <connections>
-                                                    <action selector="redPressed" destination="XBk-ds-vDs" id="q3v-7S-JuR"/>
-                                                    <segue destination="0NS-a0-enW" kind="show" identifier="theRedViewController" id="w7h-kK-3XA"/>
-                                                </connections>
-                                            </barButtonItem>
-                                        </rightBarButtonItems>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="choose word" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hkg-hX-Wty">
+                                <rect key="frame" x="60" y="602" width="246" height="46"/>
+                                <color key="backgroundColor" red="0.2811053395" green="0.60990655419999995" blue="0.42551732060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="34"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumbs-up" translatesAutoresizingMaskIntoConstraints="NO" id="lai-a3-onh">
+                                <rect key="frame" x="67.666666666666686" y="286" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="J2A-ss-hZp"/>
+                                    <constraint firstAttribute="width" constant="240" id="K3q-WU-CAZ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.2811053395" green="0.60990655419999995" blue="0.42551732060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lai-a3-onh" firstAttribute="centerX" secondItem="PIv-d9-RYD" secondAttribute="centerX" id="0N2-Of-sxL"/>
-                            <constraint firstItem="4Oc-9Z-reN" firstAttribute="top" secondItem="lai-a3-onh" secondAttribute="bottom" constant="37.5" id="6si-F3-bkn"/>
-                            <constraint firstItem="lai-a3-onh" firstAttribute="centerY" secondItem="PIv-d9-RYD" secondAttribute="centerY" id="h7Y-CC-v8e"/>
-                            <constraint firstItem="lai-a3-onh" firstAttribute="centerY" secondItem="PIv-d9-RYD" secondAttribute="centerY" id="hZp-Oc-Ath"/>
+                            <constraint firstItem="FRB-El-rAp" firstAttribute="bottom" secondItem="Hkg-hX-Wty" secondAttribute="bottom" constant="130" id="KKi-Jp-c3x"/>
+                            <constraint firstItem="lai-a3-onh" firstAttribute="centerY" secondItem="PIv-d9-RYD" secondAttribute="centerY" id="Psx-kh-EmE"/>
+                            <constraint firstItem="lai-a3-onh" firstAttribute="centerX" secondItem="PIv-d9-RYD" secondAttribute="centerX" id="UHU-JC-bdQ"/>
+                            <constraint firstItem="FRB-El-rAp" firstAttribute="trailing" secondItem="Hkg-hX-Wty" secondAttribute="trailing" constant="69" id="XPk-Vv-O7P"/>
                             <constraint firstItem="z10-SL-Pmk" firstAttribute="top" secondItem="FRB-El-rAp" secondAttribute="top" id="mWf-b9-Owp"/>
-                            <constraint firstItem="4Oc-9Z-reN" firstAttribute="centerX" secondItem="PIv-d9-RYD" secondAttribute="centerX" id="s5U-fJ-wgm"/>
-                            <constraint firstItem="lai-a3-onh" firstAttribute="centerX" secondItem="PIv-d9-RYD" secondAttribute="centerX" id="uMw-dI-2xa"/>
+                            <constraint firstItem="Hkg-hX-Wty" firstAttribute="leading" secondItem="FRB-El-rAp" secondAttribute="leading" constant="60" id="vio-jO-ICf"/>
                             <constraint firstItem="z10-SL-Pmk" firstAttribute="centerX" secondItem="FRB-El-rAp" secondAttribute="centerX" id="ws1-p4-SaJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FRB-El-rAp"/>
                     </view>
+                    <connections>
+                        <outlet property="greatJobTextField" destination="Hkg-hX-Wty" id="kA4-Q9-Vq3"/>
+                        <outlet property="thumbsUpPulseView" destination="lai-a3-onh" id="4eK-3f-o9i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kwx-5S-rxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -240,7 +219,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stop_icon " translatesAutoresizingMaskIntoConstraints="NO" id="yiu-ty-N6o">
-                                <rect key="frame" x="28" y="246.66666666666663" width="319" height="319"/>
+                                <rect key="frame" x="28" y="266.33333333333337" width="319" height="279.33333333333337"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1q-4d-WIf">
                                 <rect key="frame" x="16" y="44" width="343" height="44"/>
@@ -251,41 +230,43 @@
                                 <color key="barTintColor" red="0.82462298869999995" green="0.20709139109999999" blue="0.1012700275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="EZ-STOP" id="zIx-Bz-2o4">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="geK-KY-i84">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="geK-KY-i84">
                                             <connections>
-                                                <action selector="backButtonPressed" destination="0NS-a0-enW" id="JEq-ea-sjr"/>
-                                                <segue destination="BYZ-38-t0r" kind="show" identifier="toMainViewController" id="0ZU-mG-5AI"/>
+                                                <action selector="exitStopButton:" destination="0NS-a0-enW" id="HjM-Mz-LZB"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="backToHomePressed" id="gtH-Kx-a70"/>
                                             </connections>
                                         </barButtonItem>
-                                        <rightBarButtonItems>
-                                            <barButtonItem image="caution-3" id="Wql-wc-at1">
-                                                <color key="tintColor" red="0.99442261460000003" green="0.96901518109999996" blue="0.260961473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <connections>
-                                                    <action selector="yellowButtonPressed" destination="0NS-a0-enW" id="opt-Uu-Btc"/>
-                                                    <segue destination="2rA-wP-rui" kind="show" identifier="toYellowViewController" id="QCN-pa-uyy"/>
-                                                </connections>
-                                            </barButtonItem>
-                                            <barButtonItem image="caution-3" id="2Ad-xd-YsM">
-                                                <color key="tintColor" red="0.2811053395" green="0.60990655419999995" blue="0.42551732060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <connections>
-                                                    <action selector="greenButtonPressed" destination="0NS-a0-enW" id="5RW-4g-a1s"/>
-                                                    <segue destination="XBk-ds-vDs" kind="show" identifier="toGreatJobViewController" id="80h-ji-OSh"/>
-                                                </connections>
-                                            </barButtonItem>
-                                        </rightBarButtonItems>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="choose word" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WwY-2e-RZX">
+                                <rect key="frame" x="64.666666666666686" y="609" width="246" height="50"/>
+                                <color key="backgroundColor" red="0.898223876953125" green="0.22902143001556396" blue="0.11434566229581833" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="246" id="6fx-1P-L1P"/>
+                                    <constraint firstAttribute="height" constant="50" id="cfd-Lm-vOW"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="35"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.82462298869999995" green="0.20709139109999999" blue="0.1012700275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yiu-ty-N6o" firstAttribute="centerX" secondItem="vrf-r2-wgP" secondAttribute="centerX" id="1Fn-dD-Aoq"/>
+                            <constraint firstItem="WwY-2e-RZX" firstAttribute="centerX" secondItem="vrf-r2-wgP" secondAttribute="centerX" id="IOb-g9-bia"/>
                             <constraint firstItem="b1q-4d-WIf" firstAttribute="centerX" secondItem="xX5-Hq-alb" secondAttribute="centerX" id="NpF-Kt-dow"/>
                             <constraint firstItem="yiu-ty-N6o" firstAttribute="centerY" secondItem="vrf-r2-wgP" secondAttribute="centerY" id="Tnm-s5-QfQ"/>
+                            <constraint firstItem="WwY-2e-RZX" firstAttribute="top" secondItem="yiu-ty-N6o" secondAttribute="bottom" constant="63.333333333333371" id="dhS-qA-UGb"/>
                             <constraint firstItem="b1q-4d-WIf" firstAttribute="top" secondItem="xX5-Hq-alb" secondAttribute="top" id="uVr-Nj-nzC"/>
+                            <constraint firstItem="xX5-Hq-alb" firstAttribute="bottom" secondItem="WwY-2e-RZX" secondAttribute="bottom" constant="119" id="vIg-CW-3fr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xX5-Hq-alb"/>
                     </view>
+                    <connections>
+                        <outlet property="stopPulseView" destination="yiu-ty-N6o" id="iOe-0j-v0H"/>
+                        <outlet property="stopWordsTextField" destination="WwY-2e-RZX" id="577-fO-o8r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eaK-3o-1Vv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -293,15 +274,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="caution-3" width="24" height="24"/>
         <image name="exclamation point icon" width="240" height="240"/>
         <image name="stop_icon " width="319" height="319"/>
         <image name="thumbs-up" width="214" height="210"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="w7h-kK-3XA"/>
-        <segue reference="3FS-kT-8dT"/>
-        <segue reference="uRk-Xd-zUT"/>
-        <segue reference="Ywt-ZJ-6we"/>
+        <segue reference="9LL-Ah-CA8"/>
     </inferredMetricsTieBreakers>
 </document>
