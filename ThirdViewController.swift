@@ -1,6 +1,6 @@
 //
 //  ThirdViewController.swift
-//  EZ-STOP
+//  STOP E-Z
 //
 //  Created by Mac User on 7/15/19.
 //  Copyright © 2019 Frank. All rights reserved.
@@ -44,6 +44,13 @@ class ThirdViewController: UIViewController {
         performSegue(withIdentifier: "exitToHmeButton", sender: self)
     }
     
+    @IBAction func smallYellowButton(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "toSecondView", sender: self)
+    }
+    
+    @IBAction func smallRedButton(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "toFirstView", sender: self)
+    }
     func setUpLayer() {
         layer.shadowOpacity = 30.0
         layer.shadowRadius = 40.0
@@ -71,9 +78,13 @@ func createThumbsUpWordPicker() {
         toolBar.barTintColor = .black
         toolBar.tintColor = .white
         
-        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(SecondViewController.dismissKeyboard))
+         //let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(ThirdViewController.dismissKeyboard))
         
-        toolBar.setItems([doneButton], animated: false)
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        
+        view.addGestureRecognizer(tap)
+        
+        //toolBar.setItems([doneButton], animated: true)
         toolBar.isUserInteractionEnabled = true
         greatJobTextField.inputAccessoryView = toolBar
         
@@ -121,6 +132,7 @@ extension ThirdViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         label.text = goodJobWords[row]
         
         return label
+        
         
     }
 }
