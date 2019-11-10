@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6326CAF822DD722500D0DD51 /* EZ-STOP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EZ-STOP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6326CAF822DD722500D0DD51 /* STOP E-Z.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STOP E-Z.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6326CAFB22DD722500D0DD51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6326CAFD22DD722500D0DD51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6326CB0022DD722500D0DD51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		6326CAEF22DD722500D0DD51 = {
 			isa = PBXGroup;
 			children = (
-				6326CAFA22DD722500D0DD51 /* EZ-STOP */,
+				6326CAFA22DD722500D0DD51 /* STOP-EZ */,
 				6326CAF922DD722500D0DD51 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +52,12 @@
 		6326CAF922DD722500D0DD51 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6326CAF822DD722500D0DD51 /* EZ-STOP.app */,
+				6326CAF822DD722500D0DD51 /* STOP E-Z.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6326CAFA22DD722500D0DD51 /* EZ-STOP */ = {
+		6326CAFA22DD722500D0DD51 /* STOP-EZ */ = {
 			isa = PBXGroup;
 			children = (
 				6326CAFB22DD722500D0DD51 /* AppDelegate.swift */,
@@ -70,15 +70,15 @@
 				6326CB0422DD722800D0DD51 /* LaunchScreen.storyboard */,
 				6326CB0722DD722800D0DD51 /* Info.plist */,
 			);
-			path = "EZ-STOP";
+			path = "STOP-EZ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6326CAF722DD722500D0DD51 /* EZ-STOP */ = {
+		6326CAF722DD722500D0DD51 /* STOP E-Z */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6326CB0A22DD722800D0DD51 /* Build configuration list for PBXNativeTarget "EZ-STOP" */;
+			buildConfigurationList = 6326CB0A22DD722800D0DD51 /* Build configuration list for PBXNativeTarget "STOP E-Z" */;
 			buildPhases = (
 				6326CAF422DD722500D0DD51 /* Sources */,
 				6326CAF522DD722500D0DD51 /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = "EZ-STOP";
+			name = "STOP E-Z";
 			productName = "EZ-STOP";
-			productReference = 6326CAF822DD722500D0DD51 /* EZ-STOP.app */;
+			productReference = 6326CAF822DD722500D0DD51 /* STOP E-Z.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6326CAF322DD722500D0DD51 /* Build configuration list for PBXProject "EZ-STOP" */;
+			buildConfigurationList = 6326CAF322DD722500D0DD51 /* Build configuration list for PBXProject "STOP E-Z" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6326CAF722DD722500D0DD51 /* EZ-STOP */,
+				6326CAF722DD722500D0DD51 /* STOP E-Z */,
 			);
 		};
 /* End PBXProject section */
@@ -297,13 +297,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84Y94U66TP;
-				INFOPLIST_FILE = "EZ-STOP/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/STOP-EZ/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "coma.EZ-STOP";
+				PRODUCT_BUNDLE_IDENTIFIER = "coma.STOP-E-Z";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -318,13 +318,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84Y94U66TP;
-				INFOPLIST_FILE = "EZ-STOP/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/STOP-EZ/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "coma.EZ-STOP";
+				PRODUCT_BUNDLE_IDENTIFIER = "coma.STOP-E-Z";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -335,7 +335,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6326CAF322DD722500D0DD51 /* Build configuration list for PBXProject "EZ-STOP" */ = {
+		6326CAF322DD722500D0DD51 /* Build configuration list for PBXProject "STOP E-Z" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6326CB0822DD722800D0DD51 /* Debug */,
@@ -344,7 +344,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6326CB0A22DD722800D0DD51 /* Build configuration list for PBXNativeTarget "EZ-STOP" */ = {
+		6326CB0A22DD722800D0DD51 /* Build configuration list for PBXNativeTarget "STOP E-Z" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6326CB0B22DD722800D0DD51 /* Debug */,

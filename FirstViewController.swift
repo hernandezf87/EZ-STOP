@@ -1,9 +1,9 @@
 //
 //  FirstViewController.swift
-//  EZ-STOP
+//  STOP E-Z
 //
 //  Created by Mac User on 7/15/19.
-//  Copyright © 2019 Frank. All rights reserved.
+//  Copyright © 2019 Francisco. All rights reserved.
 //
 
 import UIKit
@@ -32,11 +32,20 @@ class FirstViewController: UIViewController {
         createStopWordPicker()
         createToolbar()
     }
-    
    //you can add any buttons here
     @IBAction func exitStopButton(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "backToHomePressed", sender: self)
     }
+    
+    @IBAction func greenButtonPressed(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "toThumbsUp", sender: self)
+    }
+    
+    @IBAction func yellowButtonPressed(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "toCautionView", sender: self)
+    }
+    
+    
     
     func setUpLayer() {
         layer.shadowOpacity = 30.0
@@ -66,9 +75,13 @@ class FirstViewController: UIViewController {
         toolBar.barTintColor = .black
         toolBar.tintColor = .white
         
-        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(SecondViewController.dismissKeyboard))
+        //let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(SecondViewController.dismissKeyboard))
         
-        toolBar.setItems([doneButton], animated: false)
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        
+        view.addGestureRecognizer(tap)
+        
+        //toolBar.setItems([doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
         stopWordsTextField.inputAccessoryView = toolBar
         
@@ -78,7 +91,6 @@ class FirstViewController: UIViewController {
         view.endEditing(true)
     }
 }
-
 extension FirstViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
